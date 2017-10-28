@@ -1,0 +1,134 @@
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a href="#" class="back link"> 
+        <i class="icon icon-back"></i>
+        <span>Back</span></a></div>
+    </div>
+  </div>
+  <div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="addPlayer" class="page">
+      <!-- Scrollable page content-->
+      <div class="page-content">
+        <div class="content-block-title">Player</div>
+        <div class="list-block">
+          <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-media"><i class="icon icon-form-titulo"></i></div>
+                <div class="item-inner"> 
+                  <div class="item-input">
+                    <input type="text" name="name" id="name" value="{{url_query.name}}" placeholder="Player name"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-media"><i class="icon icon-form-titulo"></i></div>
+                <div class="item-inner">
+                    <div class="item-input">
+                        <select name="type" id="type" value="{{url_query.type}}">
+                            <option selected disabled>Select a character type:</option>
+                            <option value="PC">Player Character</option>
+                            <option value="WPC">World Player Character</option>
+                            <option value="NPC">Non Player Character</option>
+                            <option value="UE">Unique Enemy</option>
+                            <option value="FE">Faction Enemy</option>
+                        </select>
+                    </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-media"><i class="icon icon-form-titulo"></i></div>
+                <div class="item-inner">
+                    <div class="item-input">
+                        <select name="lineage" id="lineage" value="{{url_query.lineage}}">
+                            <option selected disabled>Select a character lineage:</option>
+                            <option value="Mage">Mages</option>
+                            <option value="Joker">Jokers</option>
+                            <option value="Druid">Druids</option>
+                            <option value="Hunter">Hunters</option>
+                            <option value="Fighter">Fighters</option>
+                            <option value="Priest">Priests</option>
+                            <option value="Goblin">Goblins</option>
+                            <option value="Pirate">Pirates</option>
+                            <option value="Spider">Spiders</option>
+                            <option value="Skeleton">Skeletons</option>
+                            <option value="Witcher">Witches</option>
+                            <option value="Orc">Orcs</option>
+                            <option value="Zombie">Zombies</option>
+                            <option value="Ghost">Wraiths</option>
+                            <option value="Dragon">Dragons</option>
+                        </select>
+                    </div>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-titulo"></i></div>
+                    <div class="item-inner">
+                        <div class="item-input">
+                            <select name="line" id="line" value="{{url_query.line}}">
+                                <option selected disabled>Select a character line:</option>
+                                <option value="Good">Good</option>
+                                <option value="Bad">Bad</option>
+                                <option value="Ugly">Ugly</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-titulo"></i></div>
+                    <div class="item-inner"> 
+                    <div class="item-input">
+                        <input type="text" name="description" id="description" value="{{url_query.description}}" placeholder="Description"/>
+                    </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-titulo"></i></div>
+                    <div class="item-inner"> 
+                    <div class="item-input">
+                        <input type="number" name="gold" id="gold" value="{{url_query.gold}}" min="0" placeholder="Gold"/>
+                    </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-titulo"></i></div>
+                    <div class="item-inner"> 
+                        <div class="item-input">
+                            <input type="number" name="body" id="body_stats" value="{{url_query.body_stats}}" min="0" max="9" placeholder="Body"/>
+                        </div>
+                        <div class="item-input">
+                            <input type="number" name="mind" id="mind_stats" value="{{url_query.mind_stats}}" min="0" max="9" placeholder="Mind"/>
+                        </div>
+                        <div class="item-input">
+                            <input type="number" name="soul" id="soul_stats" value="{{url_query.soul_stats}}" min="0" max="9" placeholder="Soul"/>
+                        </div>
+                        <div class="item-input">
+                            <input type="number" name="darkness" id="darkness_stats" value="{{url_query.darkness_stats}}" min="0" max="9" placeholder="Darkness"/>
+                        </div>
+                    </div>
+                </div>
+            </li>
+          </ul>
+          <div class="buttons-row">
+            <a href="#" id="cancel" name="cancel" class="button button-fill color-red">Cancel</a>
+            <a href="#" id="save" name="save" class="button button-fill color-green">Save</a>
+            <input type="hidden" name="edit" id="edit" value="{{url_query.id}}">
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
