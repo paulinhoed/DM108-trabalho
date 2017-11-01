@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "949635544211",
+    "firebase_url": "https://hellonotification-75fa7.firebaseio.com",
+    "project_id": "hellonotification-75fa7",
+    "storage_bucket": "hellonotification-75fa7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949635544211:android:072549ccd7605dd9",
+        "android_client_info": {
+          "package_name": "org.paulosouza.notificacoesFirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949635544211-l2gdavka92cq4q8ejp7bfojjn7342nd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv62cwtQ6dQE4vB4_RCCvre3iCg3DtA2c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
